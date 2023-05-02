@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> js task numbers</title>
+<style>
+
+	body{
+		padding-top:150px;
+
+	}
+	.ta1{
+		background-color: lightpink;
+		border: 1px solid black ;	
+	}
+	#c1,#c2,#c3,#c4,#c5{
+		background-color: blue;
+		color: white;
+		box-sizing:border-box;
+		width:20%;
+		border-radius:8px;
+		text-align: center;
+	}
+	#r1,#r2,#r3,#r4,#r5{
+		text-align: right;
+		padding: 20px;
+	}
+	tr{
+		padding:50px;
+	}
+	td{
+		padding-left: 20px;
+		font-size: 20px;
+		font-style: oblique;
+	}
+</style>
+<script>
+	function len(b=0)
+	{
+		if(b==1)
+			document.getElementById("c1").value=222;
+		else if(b==2)
+			document.getElementById("c2").value=34;
+		else if(b==3)
+			document.getElementById("c3").value=342;
+		else if(b==4)
+			document.getElementById("c4").value=3311;
+		else
+			document.getElementById("c5").value=1;
+	}
+</script>
+</head>
+<body>
+	<table class="ta1" align="center">
+		<tr>
+			<td colspan="2"> Lorem ipsum dolor sit amet </td>
+			<td id="r1"><input id="c1" onmouseover="len(1)" value=""></td>
+		</tr>
+		<tr>
+			<td colspan="2">consectetur adipiscing elit</td>
+			<td id="r2"><input id="c2" value="" onmouseover="len(2)"></td>
+		</tr>
+		<tr>
+			<td colspan="2">Et autem optio et</td>
+			<td id="r3"><input id="c3" value="" onmouseover="len(3)"></td>
+		</tr>
+		<tr>
+			<td colspan="2">dolor Quis ut modi</td>
+			<td id="r4"><input id="c4" value="" onmouseover="len(4)"></td>
+		</tr>
+		<tr>
+			<td colspan="2">quibusdam provident aut</td>
+			<td id="r5"><input id="c5" value="" onmouseover="len(5)"></td>
+		</tr>
+	</table>
+</body>
+</html>
